@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-vue",
-  "version": "2.13.1",
+  "name": "@pentium/bootstrap-vue",
+  "version": "0.0.1",
   "description": "BootstrapVue, with more than 85 custom components, over 45 plugins, several custom directives, and over 300 icons, provides one of the most comprehensive implementations of Bootstrap v4 components and grid system for Vue.js. With extensive and automated WAI-ARIA accessibility markup.",
   "main": "dist/bootstrap-vue.common.js",
   "web": "dist/bootstrap-vue.js",
@@ -269,5 +269,8 @@
     "type": "opencollective",
     "url": "https://opencollective.com/bootstrap-vue",
     "logo": "https://opencollective.com/bootstrap-vue/logo.txt"
+  },
+  "publishConfig": {
+    "registry": "https://package.pentium.network/repository/npm-hosted/"
   }
 }

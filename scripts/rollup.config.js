@@ -4,7 +4,9 @@ import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import { camelCase } from 'lodash'
-import { name, dependencies } from '../package.json'
+import { dependencies } from '../package.json'
+
+const name = 'bootstrap-vue'
 
 const bannerComment = require('./banner')
 
