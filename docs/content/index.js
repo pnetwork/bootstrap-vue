@@ -46,7 +46,7 @@ export const nav = [
   }
 ]
 
-export const bootstrapVersion = parseVersion(dependencies.bootstrap)
+export const bootstrapVersion = parseVersion(dependencies['@pentium/bootstrap'])
 export const nuxtVersion = parseVersion(devDependencies.nuxt)
 export const portalVueVersion = parseVersion(dependencies['portal-vue'])
 export const vueVersion = parseVersion(devDependencies.vue)
