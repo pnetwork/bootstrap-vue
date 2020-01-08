@@ -62,7 +62,7 @@ export const nav = [
   }
 ]
 
-export const bootstrapVersion = parseVersion(dependencies.bootstrap)
+export const bootstrapVersion = parseVersion(dependencies['@pentium/bootstrap'])
 export const bootstrapIconsVersion = parseFullVersion(devDependencies['bootstrap-icons'])
 export const popperVersion = parseVersion(dependencies['popper.js'])
 export const portalVueVersion = parseVersion(dependencies['portal-vue'])

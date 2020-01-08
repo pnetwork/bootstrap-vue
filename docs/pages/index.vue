@@ -393,9 +393,9 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../node_modules/bootstrap/scss/functions';
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/@pentium/bootstrap/scss/functions';
+@import '../../node_modules/@pentium/bootstrap/scss/variables';
+@import '../../node_modules/@pentium/bootstrap/scss/mixins';
 
 .bd-masthead {
   color: #f8f9fa;

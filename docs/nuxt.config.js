@@ -321,8 +321,8 @@ module.exports = {
   css: [
     'highlight.js/styles/atom-one-light.css',
     'codemirror/lib/codemirror.css',
-    'bootstrap/dist/css/bootstrap.css',
-    '../scripts/index.scss', // BootstrapVue SCSS
+    '@pentium/bootstrap/scss/bootstrap.scss',
+    '../scripts/build.scss', // BootstrapVue SCSS
     '@assets/css/docs.min.css',
     '@assets/scss/styles.scss'
   ]
