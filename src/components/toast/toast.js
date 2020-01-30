@@ -63,6 +63,10 @@ export const props = {
     type: [Number, String],
     default: () => getComponentConfig(NAME, 'autoHideDelay')
   },
+  noHeader: {
+    type: Boolean,
+    default: false
+  },
   noCloseButton: {
     type: Boolean,
     default: false
@@ -369,7 +373,7 @@ export const BToast = /*#__PURE__*/ Vue.extend({
       }
       // Assemble the header (if needed)
       let $header = h()
-      if ($headerContent.length > 0) {
+      if ($headerContent.length > 0  && !this.noHeader) {
         $header = h(
           'header',
           { staticClass: 'toast-header', class: this.headerClass },
