@@ -24,7 +24,12 @@ export const BDropdownItem = /*#__PURE__*/ Vue.extend({
     variant: {
       type: String,
       default: null
-    }
+    },
+    // TODO: Update doc
+    preventClose: {
+      type: Boolean,
+      default: false,
+    },
   },
   methods: {
     closeDropdown() {
@@ -37,7 +42,9 @@ export const BDropdownItem = /*#__PURE__*/ Vue.extend({
     },
     onClick(evt) {
       this.$emit('click', evt)
-      this.closeDropdown()
+      if (!this.preventClose) {
+        this.closeDropdown()
+      }
     }
   },
   render(h) {
