@@ -1,5 +1,6 @@
 import { importAll, parseVersion, parseFullVersion } from '~/utils'
 import { version, dependencies, devDependencies, description } from '~/../package.json'
+import { version as pentiumBootstrapVersion } from '~/../packages/@pentium/bootstrap/package.json'
 import DEFAULT_CONFIG from '~/../src/utils/config-defaults'
 
 const componentsContext = require.context('~/../src/components/', true, /package.json/)
@@ -62,7 +63,7 @@ export const nav = [
   }
 ]
 
-export const bootstrapVersion = parseVersion(dependencies['@pentium/bootstrap'])
+export const bootstrapVersion = pentiumBootstrapVersion
 export const bootstrapIconsVersion = parseFullVersion(devDependencies['bootstrap-icons'])
 export const popperVersion = parseVersion(dependencies['popper.js'])
 export const portalVueVersion = parseVersion(dependencies['portal-vue'])

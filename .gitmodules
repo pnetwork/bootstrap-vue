@@ -1,0 +1,3 @@
+[submodule "packages/@pentium/bootstrap"]
+	path = packages/@pentium/bootstrap
+	url = git@github.com:pnetwork/bootstrap.git

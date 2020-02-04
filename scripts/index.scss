@@ -3,9 +3,9 @@
  */
 
 // Include Bootstrap functions, variables, and mixins
-@import "node_modules/@pentium/bootstrap/scss/functions";
-@import "node_modules/@pentium/bootstrap/scss/variables";
-@import "node_modules/@pentium/bootstrap/scss/mixins";
+@import "packages/@pentium/bootstrap/scss/functions";
+@import "packages/@pentium/bootstrap/scss/variables";
+@import "packages/@pentium/bootstrap/scss/mixins";
 
 // Import BootstrapVue custom SCSS
 @import "../src/index.scss";
