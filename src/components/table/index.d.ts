@@ -21,7 +21,7 @@ export declare class BTable extends BvComponent {
   // Props
   id?: string
   items: Array<any> | BvTableProviderCallback
-  fields?: BvTableFieldArray
+  // fields?: BvTableFieldArray
   primaryKey?: string
   sortBy?: string | null
   sortDesc?: boolean
@@ -53,7 +53,7 @@ export declare class BTableLite extends BvComponent {
   // Props
   id?: string
   items: Array<any> | BvTableProviderCallback
-  fields?: BvTableFieldArray
+  // fields?: BvTableFieldArray
   primaryKey?: string
   tbodyTrClass?: string | Array<any> | object | BvTableTbodyTrClassCallback
   tbodyTrAttr?: object | BvTableTbodyTrAttrCallback

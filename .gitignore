@@ -4,7 +4,8 @@
 .vercel/
 .vscode/
 coverage/
-dist/
+dist/*
+!dist/bootstrap-vue.min.css*
 docs-dist/
 esm/
 node_modules/
