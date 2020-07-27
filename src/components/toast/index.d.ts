@@ -32,7 +32,7 @@ export interface BvToastOptions {
   appendToast?: boolean
   isStatus?: boolean
   noFade?: boolean
-  noHeader?: boolean
+  noBody?: boolean
   toastClass?: string | string[] | Array<any> | object | any
   headerClass?: string | string[] | Array<any> | object | any
   bodyClass?: string | string[] | Array<any> | object | any

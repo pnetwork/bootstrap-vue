@@ -63,7 +63,7 @@ export const props = {
     type: [Number, String],
     default: () => getComponentConfig(NAME, 'autoHideDelay')
   },
-  noHeader: {
+  noBody: {
     type: Boolean,
     default: false
   },
@@ -373,7 +373,7 @@ export const BToast = /*#__PURE__*/ Vue.extend({
       }
       // Assemble the header (if needed)
       let $header = h()
-      if ($headerContent.length > 0  && !this.noHeader) {
+      if ($headerContent.length > 0) {
         $header = h(
           'header',
           { staticClass: 'toast-header', class: this.headerClass },
@@ -382,16 +382,19 @@ export const BToast = /*#__PURE__*/ Vue.extend({
       }
       // Toast body
       const isLink = this.href || this.to
-      const $body = h(
-        isLink ? BLink : 'div',
-        {
-          staticClass: 'toast-body',
-          class: this.bodyClass,
-          props: isLink ? { to: this.to, href: this.href } : {},
-          on: isLink ? { click: this.onLinkClick } : {}
-        },
-        [this.normalizeSlot('default', this.slotScope) || h()]
-      )
+      const $body = this.noBody
+        ? h()
+        : h(
+            isLink ? BLink : 'div',
+            {
+              staticClass: 'toast-body',
+              class: this.bodyClass,
+              props: isLink ? { to: this.to, href: this.href } : {},
+              on: isLink ? { click: this.onLinkClick } : {}
+            },
+            [this.normalizeSlot('default', this.slotScope) || h()]
+          )
+
       // Build the toast
       const $toast = h(
         'div',
