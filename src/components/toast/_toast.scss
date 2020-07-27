@@ -45,7 +45,7 @@
 @mixin b-toast-variant($background, $border, $color) {
   // Based on alert-variant mixin
   .toast {
-    background-color: rgba(lighten($background, 5%), $b-toast-background-opacity);
+    background-color: rgba($background, $b-toast-background-opacity);
     border-color: rgba($border, $b-toast-background-opacity);
     color: $color;
 
@@ -62,7 +62,7 @@
 
   &.b-toast-solid {
     .toast {
-      background-color: rgba(lighten($background, 5%), 1);
+      background-color: rgba($background, 1);
     }
   }
 }
